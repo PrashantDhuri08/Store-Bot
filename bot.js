@@ -8,8 +8,14 @@ client.on("ready", () => {
   console.log("Client is ready!");
 });
 
+// client.on("qr", (qr) => {
+//   qrcode.generate(qr, { small: true });
+//   console.log("Scan the QR code above to log in.");
+// });
+
 client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
+  console.log(`QR Code Text: ${qr}`); // Logs the QR code text to the console
   console.log("Scan the QR code above to log in.");
 });
 
