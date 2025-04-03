@@ -21,7 +21,7 @@ client.on("qr", (qr) => {
 
 client.on("message", async (msg) => {
   try {
-    if (msg.body.toLowerCase() === "hi") {
+    if (msg.body.toLowerCase() === "Hi") {
       const commandList = `*Welcome to Franco Store!* ❤
 
 Here are our available commands:
